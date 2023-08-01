@@ -1,0 +1,7 @@
+/***Commande pour créer une permission *****/
+
+php artisan make:Seeder RoleSeeder
+
+après écriture on lance la commande  php artisan db:seed --class=RoleSeeder
+pour inserer en base de données
+php artisan make:resource RoleResource pour créer le role ressource
