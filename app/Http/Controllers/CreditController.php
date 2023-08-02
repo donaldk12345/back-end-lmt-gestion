@@ -18,11 +18,9 @@ class CreditController extends Controller
 
         $credits = Credit::with('compte')->get();
 
-        $response = [
-            'credit' => $credits
-        ];
+      
 
-        return response()->json($response);
+        return response()->json($credits);
     }
 
     /**

@@ -19,11 +19,9 @@ class CompteController extends Controller
 
         $compte = Compte::with('category')->get();
 
-        $response = [
-            'compte' => $compte
-        ];
+     
 
-        return response()->json($response);
+        return response()->json($compte);
     }
 
     /**

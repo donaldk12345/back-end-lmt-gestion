@@ -31,7 +31,6 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('roles', [\App\Http\Controllers\RoleController::class, 'index']);
     Route::put('roles/{id}', [\App\Http\Controllers\RoleController::class, 'update']);
     Route::delete('roles/{id}', [\App\Http\Controllers\RoleController::class, 'destroy']);
-    Route::get('users', [\App\Http\Controllers\AuthController::class, 'index']);
     Route::post('roles', [\App\Http\Controllers\RoleController::class, 'store']);
     Route::post('categories', [\App\Http\Controllers\CategoryController::class, 'store']);
     Route::get('categories', [\App\Http\Controllers\CategoryController::class, 'index']);
